@@ -54,72 +54,74 @@ rel="stylesheet" />
     <section class="forms-desing">
         <form action="register" method="POST">
             <p>
+                <label for="Nombre y Apellido"></label>
                 <input class="bar-info" type="text" name="nombre" id="nombre" placeholder= "Nombre y apellido" required>
             </p>
             <p>
-                <input class="bar-info" type="text" name="usuario" id="usuario" placeholder= "Nombre de Usuari@" required>
+                <label for="usuario"></label>
+                <input class="bar-info" type="text" name="usuario" id="usuario" placeholder= "Nombre de Usuario" required>
             </p>
+            <p>
+                <label for="email"></label>
+                <input class="bar-info" type="email" name="email" id="email" placeholder="E-mail" required>
+              </p>
             <p>
                 <h4>Fecha de Nacimiento</h4>
                 <input class="bar-info" type="date" name="fecha" value="" min="2004-01-01" max="2022-12-31" required>
             </p>
             <p>
+                <label for="domicilio"></label>
                 <input class="bar-info" type="text" name="domicilio" id="domicilio" placeholder= "Domicilio" required>
             </p>
             <p>
                 <h4>Perfil del Usuario</h4>
-                    <ul>
-                        <li>
-                          <label for="Opcion1">
-                            <input type="radio" id="Opcion1" name="perfil" value="Comprador" >
-                            Comprador
-                          </label>
-                        </li>
-                        <li>
-                          <label for="Opcion2">
-                            <input type="radio" id="Opcion2" name="perfil" value="Vendedor">
-                            Vendedor
-                          </label>
-                        </li>
-                    </ul>
+                
+                <p>
+                    <div class="Opciones">
+                    <input type="radio" name="perfil" id="">
+                    <label for="radio">comprador</label>
+                    <input type="radio" name="perfil" id="">
+                    <label for="radio">vendedor</label>
+                </div>
+                </p>
+                
             </p>
             <p>
                 <h4>Intereses</h4>
-                    <ul class="checkbox-intereses">
-                        <li>
-                          <label for="checkboxHobby">
-                            <input type="checkbox" id="Opcion1" name="hobby" value="Electro" >
-                            Electro
-                          </label>
-                        </li>
-                        <li>
-                          <label for="checkboxHobby">
-                            <input type="checkbox" id="Opcion2" name="hobby" value="Moda">
-                            Moda
-                          </label>
-                        </li>
-                        <label for="checkboxHobby">
-                            <input type="checkbox" id="Opcion3" name="hobby" value="Hogar" >
-                                Hogar
-                          </label>
-                        </li>
-                        <li>
-                            <label for="checkboxHobby">
-                              <input type="checkbox" id="Opcion4" name="hobby" value="Jugueteria">
-                                Jugueteria
-                            </label>
-                          </li>
-                        <li>
-                          <label for="checkboxHobby">
-                            <input type="checkbox" id="Opcion5" name="hobby" value="Vida Sana">
-                                Vida Sana
-                          </label>
-                        </li>
-                    </ul>
+                <p>
+                    <input type="checkbox" name="intereses">
+                    <label for="intereses">Electro</label>
+                   
+                  </p>
+                  
+                  <p>
+                    <input type="checkbox" name="Intereses">
+                    <label for="Intereses">Moda</label>
+                    
+                  </p>
+                  
+                  <p>
+                    <input type="checkbox" name="Intereses">
+                    <label for="Intereses">Hogar</label>
+                    
+                  </p>
+                  
+                  <p>
+                    <input type="checkbox" name="Intereses">
+                    <label for="Intereses">Jugueteria</label>
+                    
+                  </p>
+                  
+                  <p>
+                    <input type="checkbox" name="Intereses">
+                    <label for="Intereses">Vida sana</label>
+                    
+                  </p>
             </p>
             <p>
                 <h4>Seleccion Imagen Perfil:</h4>
-                <input type="file" name="avatar" accept=".jpg" multiple>
+                <input type="file" name="imagen">
+                <label for="photo"></label>
             </p>
             <p>
                 <input class="bar-info" type="password" name="password" id="password" placeholder= "Contraseña" required>
@@ -128,7 +130,8 @@ rel="stylesheet" />
                 <input class="bar-info" type="password" name="password" id="password" placeholder= "Confirmar Contraseña" required>
             </p>
             <button type="submit">ENVIAR</button>
-            <button type="reset">Limpiar Contenido</button>
+            
+            <button class="limpiar" type="reset">Limpiar Contenido</button>
         </form>
     </section>
     </main>

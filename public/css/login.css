@@ -40,20 +40,30 @@
     margin-bottom: 16px;
     font-size: 18px;
     color: #7d7c7c;
+    transition: all 1s
   }
   
+  .selector:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 
   
   .diseño-form .send {
     width: 100%;
-    background: blue;
+    
     border: none;
     padding: 12px;
-    color: white;
+    color: black;
     margin: 16px 0;
     font-size: 16px;
+    text-decoration: solid;
+    background: #EAC926;
+    transition: all 1s;
   }
-
+  .diseño-form .send:hover {
+    background-color:  #1259c3;
+    color: white;
+  }
   .banner{
       display: none;
   }
